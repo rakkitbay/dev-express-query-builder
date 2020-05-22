@@ -1,0 +1,250 @@
+/* replicate fonts used from devexpress sample 
+Helvetica Neu
+Helvetica
+Arial
+Segoe UI */
+
+@font-face {
+    font-family: QueryBuilderHeader;
+    src: url('./HelveticaNeueThin.ttf');
+  }
+
+ html{
+    position: relative;
+    min-height: 100%;
+  }
+
+body{
+  font-family: Tahoma;
+  font-size: 14px;
+  line-height : 1.42857143;
+  color : #333;
+  margin: 0 0 60px;
+}
+
+/* --QueryBuilder-- */
+  .header {
+    font-family : QueryBuilderHeader;
+    margin: 0;
+    padding: 3px;
+    display: inline-block;
+  }
+
+  .random {
+    padding-left:5px;
+  }
+
+  #xbutton {
+    float: right; 
+    background-color: transparent;
+    border : 0.1em solid transparent;
+    margin-top:10px;
+    margin-right: 10px;
+  }
+  
+  .actionButtons {
+    display: inline-block;
+  }
+
+  .deleteButton {
+    border: none;
+    background-color: transparent;
+    background: url(./img/remove.png) no-repeat top left; 
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+  }
+  .undoButton {
+    border: none;
+    background-color: transparent;
+    background: url(./img/undo.png) no-repeat top left; 
+    width: 25px;
+    height: 25px;
+  }
+  .redoButton {
+    border: none;
+    background-color: transparent;
+    background: url(./img/redo.png) no-repeat top left; 
+    width: 25px;
+    height: 25px;
+    margin-left: 18px;
+  }
+  .lineDivider {
+    border: none;
+    background-color: transparent;
+    background: url(./img/line.png) no-repeat top left; 
+    width: 25px;
+    height: 25px;
+  }
+/* 
+  .footer {
+    position: fixed;
+    font-family: inherit;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  } */
+
+  footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .previewButton {
+    padding: 0.35em 1.2em;
+    border : 0.02em solid #e7e5e5;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #f5f5f5; 
+    color: black;  
+    float:left;  
+    margin: 3px 3px 7px 5px;
+    border-radius: 3px;
+  }
+
+  .okButton {
+    padding: 0.35em 1.2em;
+    border : 0.02em solid #e7e5e5;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #f5f5f5; 
+    color: black;  
+    float: right;
+    margin: 3px 3px 7px 5px;
+    border-radius: 3px;
+  }
+
+  .cancelButtons {
+    padding: 0.35em 1.2em;
+    border : 0.02em solid #e7e5e5;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #f5f5f5; 
+    color: black;  
+    float: right;
+    margin: 3px 7px 7px 5px;
+    border-radius: 3px;
+  }
+
+/* --End of QueryBuilder-- */
+
+/* --renderDropdown -- */
+.collapsible {
+  height: 100%; 
+  width: 100%; 
+}
+
+.dropdown-area{
+  width: 65%; 
+  float: left;
+}
+
+.properties {
+  width: 30%; 
+  height: 100%; 
+  float: right;
+}
+
+.openArrow {
+  border: none;
+  background-color: transparent;
+  background: url(./img/open3.png) no-repeat top left; 
+  width:15px;
+  height:15px;
+  margin-top:5px;
+  margin-left: 10px;
+}
+
+
+.closeArrow {
+  border: none;
+  background-color: transparent;
+  background: url(./img/close3.png) no-repeat top left; 
+  width:15px;
+  height:15px;
+  margin-top:5px;
+  margin-left: 10px;
+}
+
+.itemHeader {
+  cursor: pointer;
+  border: solid 1px #f2f2f2;
+  padding: 5px;
+  font-family: Tahoma;
+}
+
+.content  {
+  cursor: pointer;
+  border-left: solid 1px #f2f2f2;
+  border-right: solid 1px #f2f2f2;
+  border-bottom: solid 1px #f2f2f2;
+  border-radius: 0 0 5px 5px;
+  padding: 15px;
+  font-size: 14px;
+  background-color: #f5f5f5;
+  font-family: Tahoma;
+}
+
+
+/* --End of renderDropdown-- */
+
+ 
+
+/* --CSS for drag-down- */
+  .drag-area {
+    width: 65%;
+    min-height: 15%;
+    max-height: 15%;
+    font-size: 12px;
+  }
+
+  .table-list{
+    width: 65%;
+    min-height: 100%;
+  }
+
+  .table-item{
+    margin: 3px;
+    background-color: transparent;
+    display:inline-block;
+    max-width: 350px;
+    border-radius: 3px;
+    border : 0.02em solid #e7e5e5;
+  }
+
+  .table-item ul{
+    list-style-type: none;
+    padding: 3px;
+  }
+
+  .table-item li {
+    border-bottom: 1px solid #ccc;
+    font-family: Tahoma;
+    font-size: 14px;
+  }
+
+  .table-item li:last-child {
+    border: none;
+
+  }
+  .table-item li:hover{
+    font-size: 30px;
+    background: #f6f6f6;
+    font-family: Tahoma;
+    font-size: 14px;
+  }
+
+  .table-ul{
+    margin: 5px;
+    width: 220px;
+    max-width: 220px;
+  }
+/* --End of drag-down-- */
